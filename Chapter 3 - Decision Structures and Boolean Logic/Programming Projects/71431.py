@@ -11,4 +11,4 @@ minutes = minutes % 60
 days = hours // 24
 hours = hours % 24
 
-print(f"{days} day(s), {hours}, hour(s), {minutes} minute(s), and {seconds} second(s)")
+print(f"{days} day(s), {hours} hour(s), {minutes} minute(s), and {seconds} second(s).")
