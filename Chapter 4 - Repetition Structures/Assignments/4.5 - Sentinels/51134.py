@@ -15,6 +15,7 @@ while choice != '0':
 			cupcakes -= 1
 		else:
 			print("Out of stock")
+			
 	elif choice.lower() == "muffin":
 		if muffins > 0:
 			muffins -= 1
