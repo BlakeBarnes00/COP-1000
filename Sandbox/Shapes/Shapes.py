@@ -1,15 +1,32 @@
 # Class that holds all the shapes and nested loops I have made.
+import math
+
 class Shapes:
 	shapedict = {
 		0 : "Square", 
 		1 : "Rectangle", 
 		2 : "Right Triangle", 
 		3 : "Custom Triangle", 
+		4 : "Circle",
 	}
 
 	def printShapeList(self):
+		# Used to help keep length even between divs
+		dividerLength = 35 
+		for r in range(1):
+			for c in range(dividerLength):
+				print('=', end='')
+			print()
+		
+		# The actual menu choiceis printed here.
 		for i in range(len(self.shapedict)):
-			print(f"{i} \t | \t{self.shapedict[i]}")
+			print(f"{i} | {self.shapedict[i]}")
+
+		# another divider
+		for r in range(1):
+			for c in range(dividerLength):
+				print('=', end='')
+			print()
 
 	def square(self):
 		rows = int(input("How big do you want the square? "))
@@ -74,3 +91,39 @@ class Shapes:
 		# and one for the point on the far right, just to keep things neat.
 		for i in range(height + 2):
 			print(f"{outline}", end=' ')
+	 
+	def circle(self):
+
+		#      # # #        Diameter = 7
+		#    # # # # #   
+		#  # # # # # # # 
+		#  # # # # # # #
+		#  # # # # # # # 
+		#    # # # # #   
+		#      # # # 
+
+		diameter = int(input("What is the diameter of the circle? "))
+		radius = int(diameter / 2)
+		
+		if diameter < 3:
+			print(f"{diameter} is not a big enough diameter.")
+			self.circle() # run the function again until diameter is big enough
+		
+		else:
+			# Horizontal Movement
+			for i in range((2 * radius) + 1):
+				
+				# Vertical Movement
+				for j in range((2 * radius) + 1):
+					dist = math.sqrt((i - radius) * (i - radius) + (j - radius) * (j - radius))
+
+					# Dist should be in the range (radius - 0.5)
+					# and (radius + 0.5) to print stars
+					if(dist > radius - 0.5 and dist < radius + 0.5):
+						print('#', end=' ')
+					else: 
+						print(' ', end=' ')
+					
+				print()
+			
+			print("\n")
