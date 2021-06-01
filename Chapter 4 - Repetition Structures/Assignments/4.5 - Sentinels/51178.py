@@ -5,7 +5,7 @@
 
 # First few fib numbers are as follows: 0 1 1 2 3 5 8 13
 # The index starts as 0 at 0
-# So 0 = 0 | 1 = 1 | 2 = 1 | 3 = 2 | 4 = 3 | 5 = 5 | 6 = 8 |
+# So 0 = 0 | 1st = 1 | 2nd = 1 | 3rd = 2 | 4th = 3 | 5th = 5 | 6th = 8 | and so on forever.
 def fibonacci(n):
 	if n < 0:
 		print("Incorrect input.")
