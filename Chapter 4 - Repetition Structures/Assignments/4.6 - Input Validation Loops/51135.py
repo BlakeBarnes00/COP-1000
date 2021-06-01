@@ -9,7 +9,6 @@ while card != id:
 	
 	if card == id:
 		print(f"This is your ID number: {id}")
-		break
-	
+
 	else:	
 		print("This is not your ID number.")
