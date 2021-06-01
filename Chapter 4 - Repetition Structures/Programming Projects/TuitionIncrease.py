@@ -17,9 +17,9 @@ def increaseTuition(tuition):
 
 def printTuition(year):
 	if year > 1:
-		print(f"In {year} years, the tuition will be ${tuitionLog[year]}.")
+		print(f"In {year} years, the tuition will be ${tuitionLog[year]:.2f}.")
 	elif year == 1:
-		print(f"In {year} year, the tuition will be ${tuitionLog[year]}.")
+		print(f"In {year} year, the tuition will be ${tuitionLog[year]:.2f}.")
 
 
 # Loop over 6 times since I include the first unincreased year
