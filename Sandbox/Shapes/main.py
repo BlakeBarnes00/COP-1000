@@ -1,5 +1,5 @@
 import os # For the clear function from windows
-from Shapes import Shapes 
+from .Shapes import Shapes
 
 # Create Shapes object
 shapes = Shapes()
