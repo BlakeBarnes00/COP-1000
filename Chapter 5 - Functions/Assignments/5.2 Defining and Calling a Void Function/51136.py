@@ -1,0 +1,4 @@
+def printDottedLine():
+    print(".....")
+
+printDottedLine()
