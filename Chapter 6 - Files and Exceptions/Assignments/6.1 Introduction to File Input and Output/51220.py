@@ -1,0 +1,1 @@
+output = open("yearsummary.txt", "a")

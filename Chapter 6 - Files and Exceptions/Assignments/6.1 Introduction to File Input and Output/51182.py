@@ -1,0 +1,1 @@
+myFile = open("hostdata.txt", "r")

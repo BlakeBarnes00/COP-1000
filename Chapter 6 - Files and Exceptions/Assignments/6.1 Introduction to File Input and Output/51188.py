@@ -1,0 +1,1 @@
+myFile = open("priceList.txt", "w")
