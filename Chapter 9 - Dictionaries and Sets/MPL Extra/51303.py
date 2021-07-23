@@ -1,6 +1,6 @@
 d =  {1:2, 3:4, 5:6, 7:8}
-not_found = set()
 lst = [1, 6, 7]
+not_found = set()
 
 for i in lst:
 	print(i)
