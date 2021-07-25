@@ -16,4 +16,4 @@ class BankAccount:
 	
 	# The __str__ method returns a string indicating the object's state
 	def __str__(self) -> str:
-		return f"The balance is ${self.__balance}".format(self.__balance, ",.2f")
+		return f"The balance is ${self.__balance}"
